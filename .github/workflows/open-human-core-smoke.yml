@@ -1,0 +1,10 @@
+name: Open Human Core publication smoke
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'GitHub Actions publication channel is active.'
